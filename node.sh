@@ -7,7 +7,10 @@ sudo firewall-cmd --reload
 sudo npm install supervisor -g
 sudo supervisor index.js &
 
-if sudo curl 192.168.56.200:6543 grep | "DevOps"
+
+
+
+if curl 192.168.56.200:6543 | grep 'DevOps'
 then echo "Ment a curl"
 else echo "Nem ment a curl"
 fi

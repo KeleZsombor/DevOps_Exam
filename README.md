@@ -26,7 +26,7 @@
 11. Create a step which veryfies that you web app is running. (eg. curl).
 12. Edit the *visudo* file on both machines to have the content: jenkins ALL=(ALL) NOPASSWD: ALL.
 
-##Miscellaneous
+
 
 
 
