@@ -13,16 +13,16 @@
 
 ## Solution:
 
-1. Install jenkins and its dependencies to **master**. (doc.: jenkins_centos_install)
-2. Use the web UI to make a pipeline.  (doc.: jenkins_centos_install)
-3. Install git on **both machines**. (yum install git)
-4. Connect your git account to jenkins (.png-s in folder devopsmateral)
+1. Install jenkins and its dependencies to **master**. (doc.: jenkins_centos_install).
+2. Use the web UI to make a pipeline.  (doc.: jenkins_centos_install).
+3. Install git on **both machines**. (yum install git).
+4. Connect your git account to jenkins (.png-s in folder devopsmateral).
 5. In you github account, create a new public repository and create a node.sh, index.js and Jenkinsfile.
 6. Use an IDE, eg. Visual Studio Code to edit your code.
 7. Edit your index.js to run at the IP of your **slave** machine on port 6543.
 8. Edit your node.sh to install the dependencies of the application and to open the firewall at port 6543.
 9. Edit your Jenkinsfile to have two (or more) stages, one for the **master** and one for the **slave** machines.
 10. Implement a step to install and use the app ShellCheck on your script file (node.sh).
-11. Create a step which veryfies that you web app is running.
+11. Create a step which veryfies that you web app is running. (eg. curl).
 
 
