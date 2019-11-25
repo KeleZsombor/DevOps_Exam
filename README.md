@@ -13,7 +13,7 @@
 
 ## Solution:
 
-1. Install jenkins and its dependencies to **master**. (doc.: jenkins_centos_install).
+1. Install and enable jenkins and its dependencies to **master**. (doc.: jenkins_centos_install).
 2. Use the web UI to make a pipeline.  (doc.: jenkins_centos_install).
 3. Install git on **both machines**. (yum install git).
 4. Connect your git account to jenkins (.png-s in folder devopsmateral).
@@ -24,5 +24,10 @@
 9. Edit your Jenkinsfile to have two (or more) stages, one for the **master** and one for the **slave** machines.
 10. Implement a step to install and use the app ShellCheck on your script file (node.sh).
 11. Create a step which veryfies that you web app is running. (eg. curl).
+12. Edit the *visudo* file on both machines to have the content: jenkins ALL=(ALL) NOPASSWD: ALL.
+
+
+
+
 
 
