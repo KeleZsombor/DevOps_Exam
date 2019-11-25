@@ -11,7 +11,7 @@ pipeline {
                 
                 sh '''                    
                     echo "megy a master"
-                    sudo yum install shellcheck
+                    sudo rpm install shellcheck
                     sudo shellcheck node.sh
 
                 '''
@@ -32,6 +32,7 @@ pipeline {
              sh '''
                     echo "megy a slave"
                     bash node.sh
+                    curl 192.168.56.200:6543
                 '''             
                }
         }
