@@ -9,8 +9,7 @@ sudo supervisor index.js &
 
 
 
-
 if curl 192.168.56.200:6543 | grep 'DevOps'
-then echo "Ment a curl"
-else echo "Nem ment a curl"
+then echo "Ment a GREPES CURL!!! :))"
+else echo "Nem ment a grepes curl :(("
 fi
