@@ -11,7 +11,7 @@ pipeline {
                 
                 sh '''                    
                     echo "megy a master"
-                    sudo install ShellCheck
+                    sudo install ShellCheck -y
                     sudo shellcheck node.sh
 
                 '''
@@ -33,6 +33,7 @@ pipeline {
                     echo "megy a slave"
                     bash node.sh
                     curl 192.168.56.200:6543
+                    echo "megy a nodejS!"
                 '''             
                }
         }
