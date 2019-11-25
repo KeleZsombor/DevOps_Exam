@@ -9,9 +9,11 @@ pipeline {
             }
             steps {
                 
-                sh '''
-                    
+                sh '''                    
                     echo "megy a master"
+                    sudo yum install shellchek
+                    sudo shellcheck node.sh
+
                 '''
             }
         }
@@ -29,6 +31,7 @@ pipeline {
                  
              sh '''
                     echo "megy a slave"
+                    bash node.sh
                 '''             
                }
         }
