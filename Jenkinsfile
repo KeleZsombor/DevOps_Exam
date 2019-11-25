@@ -11,7 +11,7 @@ pipeline {
                 
                 sh '''                    
                     echo "megy a master"
-                    sudo yum install ShellCheck
+                    sudo yum install -y ShellCheck
                     sudo shellcheck node.sh
 
                 '''
