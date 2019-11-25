@@ -1,6 +1,7 @@
 # DevOps Exam 2019 nov. 25
 
-##Task:
+## Task:
+
 0. Create a jenkins pipeline which deploys a web application.
 1. Create two virtual machines (or use *vagrant with vagrantfile*)
 2. One has jenkins installed, the other has not.
